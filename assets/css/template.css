@@ -37,20 +37,23 @@ body{
 	width: 150px;
 	height: 600px;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 70px;
 	color: #000;
 
 }
 
-.menu img {
+.img {
 	width: 150px;
 	height: 150px;
-	background-color: #FFF;
+	background-image: url(../images/20170129_120011.jpg);
+	background-size: cover; 
+	background-position: center;
 	border-radius: 50%;
+
 }
 
 .menu nav {
-	margin-top: 50px;
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -79,7 +82,8 @@ body{
 }
 .social div {
 	flex: 1;
-
+	margin-right: 10px;
+	margin-left: 10px;
 	margin-top: 20px;
 }
 .social img {
@@ -93,6 +97,7 @@ body{
 
 .home {
 	display: flex;
+
 
 }
 
@@ -116,7 +121,9 @@ body{
 
 
 .about-area {
-	background-color: blue;
+	background-image: url(../images/home.svg);
+	background-size: cover;
+	background-position: center;
 	padding-top: 30px;
 }
 .about-title {	
@@ -196,7 +203,7 @@ body{
 	margin: 10px;
 }
 .open-div {
-	flex:1;
+	
 	background-color: #000;
 	border: 1px solid #000;	
 	border-radius: 20px;
@@ -207,11 +214,23 @@ body{
 	text-align: center;
 	padding-top: 90px;
 	height: 180px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 
 }
+.open-div a {
+	padding-bottom: 40px
+}
+.open-div span {
+	font-size: 13px;
+	cursor: pointer;
+	text-shadow: none;
+	width: 100px;
+}
 .hidden-div {
-	flex: 1;
-	height: 180px;
+	
+	height: 160px;
 	background-color: #000;
 	border: 1px solid #000;	
 	border-radius: 20px;
@@ -223,15 +242,28 @@ body{
 	padding-left: 15px;
 	padding-top: 15px;
 	font-size: 15px;
+	display: none;
 
 }
-.hidden-div button {
-	
+.hidden-div p {
+	padding-bottom: 90px;
 }
-.projects .open-div:hover, .hidden-div:hover {
+.hidden-div button {
+	width: 60px;
+	height: 23px;
+	border: 1px solid #FFF;
+	border-radius: 10px;	
+}
+.hidden-div button:hover {
+	background-color: #55BD36;
+	transition: .5s;
+	
+	font-weight: 700; 
+}
+.projects .open-div:hover {
 	background-color: #999;
 	transition: .5s;
-	text-shadow: 5px 6px 3px rgba(0,0,0,0.6);
+	text-shadow: 5px 6px 3px rgba(0,0,0,0.6);	
 	font-weight: 700;
 	
 }
@@ -240,6 +272,7 @@ body{
 	text-decoration: none;
 	font-size: 20px;
 	color: #FFF;
+	pointer-events: none;
 }
 
 .tecnologies-area {
@@ -262,15 +295,10 @@ body{
 }
 
 .tecnologies-area-study {
-	position: relative;
-	width: 100%;
-	height: 100px;
-	background-color: #999;
+	
 	
 }
-.open-div {
-	cursor: pointer;
-}
+
 
 
 
@@ -298,4 +326,34 @@ body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: #55BD36;
+}
+
+.contant {
+	display: flex;
+	justify-content: center;
+}
+.contato {
+	width: 100%;
+	max-width: 500px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.field {
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	font-size: 16px;
+}
+textarea {
+	height: 150px;
+
+}
+
+.rodape {
+	height: 50px;
+	background-color: #000;
+	color: #FFF;
 }

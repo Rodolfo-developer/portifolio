@@ -11,7 +11,7 @@
 	<section class="home-area">
 		<div class="menu-area">
 			<div class="menu">
-				<img src="">
+				<img class="img">
 				<nav>
 					<ul>
 						<li><a href="#principal" class="scrollSuave">Home</a></li>
@@ -54,21 +54,30 @@
 		<div class="portfolio-projects-area">
 			<div class="portfolio-projects">
 				<div class="projects">
-					<div class="open-div"><a href="">Project 1</a></div>
+					<div class="open-div">
+						<a href="">Project 1</a>
+						<span>More...</span>
+					</div>
 					<div class="hidden-div">
 						<p>Description...</p>
 						<button>view</button>
 					</div>
 				</div>
 				<div class="projects">
-					<div class="open-div"><a href="">Project 2</a></div>
+					<div class="open-div">
+						<a href="" >Project 2</a>
+						<span>More...</span>
+					</div>
 					<div class="hidden-div">
 						<p>Description...</p>
 						<button>view</button>
 					</div>
 				</div>
 				<div class="projects">
-					<div class="open-div"><a href="">Project 3</a></div>
+					<div class="open-div">
+						<a href="">Project 3</a>
+						<span>More...</span>
+					</div>
 					<div class="hidden-div">
 						<p>Description...</p>
 						<button>view</button>
@@ -91,9 +100,25 @@
 
 	<section class="contacts-area container" id="contato">
 		<span class="tecnologies-title">Contacts</span>
-		<div class="tecnologies-underline"></div>
+		<div class="tecnologies-underline"></div></br>
+		<div class="contant">
+			<div class="contato">
+			<h3>Formulário de contato</h3>
+			<form class="form" method="POST" action="./assets/php/email.php">
+				<input type="" name="name" class="field" placeholder="Nome">
+				<input type="" name="email" class="field" placeholder="E-mail">
+				<textarea class="field" name="message" placeholder="Digite sua mensagem aqui."></textarea>
+				<input class="field" type="submit" value="Enviar" name="">
+			</form>
+			
+		</div>
+		</div>
+
 		
 	</section>
+	<footer class="rodape container">
+		Copyright - Todos os direitos reservados
+	</footer>
 
 <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>

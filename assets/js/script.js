@@ -18,3 +18,21 @@ $('.scrollSuave').click(function(e){
 
 	});
 });*/
+
+//REVELAR DIV DESCRIPTION DE PROJECTS
+$(function(){
+	$('.open-div').click(function(){
+		$(this).siblings('.hidden-div').slideToggle();
+
+	});
+});
+
+/*function menuToggle() {
+	document.querySelector('.open-div').addEventListener("click",function(){
+		if (document.querySelector('.hidden-div').style.display == 'flex'){
+			document.querySelector('.hidden-div').style.display = 'none';
+		} else {
+			document.querySelector('.hidden-div').style.display = 'flex';
+		}
+	})
+}*/
