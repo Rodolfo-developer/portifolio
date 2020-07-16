@@ -121,7 +121,7 @@ body{
 
 
 .about-area {
-	background-image: url(../images/home.svg);
+	background-image: url();
 	background-size: cover;
 	background-position: center;
 	padding-top: 30px;
@@ -276,7 +276,7 @@ body{
 }
 
 .tecnologies-area {
-	background-color: green;
+	background-color: #222;
 	padding-top: 30px;
 }
 .tecnologies-title {
@@ -295,18 +295,77 @@ body{
 }
 
 .tecnologies-area-study {
-	
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+.tecnologies-area-general {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 70px;
+}
+.learned {
 	
 }
+.learned-title{
+	display: flex;
+	margin-bottom: 15px;
+}
 
+.learned-active {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #55BD36;
+}
+.learned span {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.learned img {
+	margin: 7px;
+}
+.learned img:hover {
+	transition: .5s;
+	text-shadow: 10px 10px 5px rgba(0,0,0,0.9);	
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #000;
+	border-radius: 7px;
+}
 
+.learning {
+	margin-top: 70px;
+}
 
-
-
-
-
-
-
+.learning-title{
+	display: flex;
+	margin-bottom: 15px;
+}
+.learning-active {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #CCC;
+}
+.learning span {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 17px;
+}
+.learning img {
+	margin: 7px;
+}
+.learning img:hover {
+	transition: .5s;
+	text-shadow: 10px 10px 5px rgba(0,0,0,0.9);	
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #000;
+	border-radius: 7px;
+}
 
 
 .contacts-area {
@@ -327,18 +386,30 @@ body{
 	border-radius: 2px;
 	background-color: #55BD36;
 }
+.contacts-tile-information{
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+
+
+
 
 .contant {
 	display: flex;
 	justify-content: center;
+	margin-top: 70px;
 }
 .contato {
 	width: 100%;
 	max-width: 500px;
 }
+
 .form {
 	display: flex;
 	flex-direction: column;
+	margin-top: 10px;
 }
 .field {
 	padding: 10px;
@@ -353,7 +424,11 @@ textarea {
 }
 
 .rodape {
-	height: 50px;
+	height: 40px;
 	background-color: #000;
 	color: #FFF;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
