@@ -15,6 +15,7 @@ body{
 	height: 100vh;
 	margin-left: 200px;
 	padding-left: 50px;	
+	padding-top: 30px;
 }
 
 .home-area {
@@ -28,7 +29,7 @@ body{
 .menu-area {
 	width: 200px;
 	height: 100vh;
-	background-color: #000;
+	background: linear-gradient(45deg, #221F1F, #CDCBCB);
 	position: fixed;
 	z-index: 999;	
 }
@@ -78,53 +79,65 @@ body{
 	color: #FFF;
 }
 .menu .social {
-	display: flex;
+	display: flex;	
+	margin: auto;
+	max-width: 120px;
 }
 .social div {
-	flex: 1;
-	margin-right: 10px;
-	margin-left: 10px;
+	flex: 1;	
+	margin: 5px;
 	margin-top: 20px;
 }
 .social img {
-	width: 30px;
-	height: auto;
-	border-radius: 50%;
-	margin: auto;
-	display: flex;
-	
+
 }
 
 .home {
 	display: flex;
-
-
+	background-color: #000;
+	background: linear-gradient(45deg, #e91e63, #ff9800)
+	overflow: hidden;
+	padding-left: revert;
 }
 
 .home-name {
-	width: 500px;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 580px;
 	line-height: 50px;
+	position: absolute;
+	padding-left: 50px;
+	margin-top: 200px;
 
 }
+
 .home-name h1 {
 	text-align: center;
 	font-weight: bolder;
-	color: #000;
-	border: 1px solid #000;
-	border-radius: 10px;
+	font-size: 40px;
+	color: #FFF;
+
 	padding: 40px;
 }
 
+.home-name h1:after {
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation: pisca 0.8s infinite;
+}
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+
+}
 
 .about-area {
-	background-image: url();
+	background-image: url(../images/background-about.png);
 	background-size: cover;
 	background-position: center;
-	padding-top: 30px;
 }
 .about-title {	
 	font-weight: bold;
@@ -138,6 +151,7 @@ body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: #55BD36;
+	margin-top: 5px;
 }
 .about-me-title{
 	font-size: 18px;
@@ -160,7 +174,7 @@ body{
 
 
 .portfolio-area {
-	background-color: #BD2B2B;
+	background: linear-gradient(45deg, #FF0505, #FF912F);
 	padding-top: 30px;
 }
 .portfolio-title {
@@ -174,6 +188,7 @@ body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: #55BD36;
+	margin-top: 5px
 }
 .portfolio-title-me {
 	font-size: 18px;
@@ -252,7 +267,8 @@ body{
 	width: 60px;
 	height: 23px;
 	border: 1px solid #FFF;
-	border-radius: 10px;	
+	border-radius: 10px;
+	outline: none;	
 }
 .hidden-div button:hover {
 	background-color: #55BD36;
@@ -277,7 +293,6 @@ body{
 
 .tecnologies-area {
 	background-color: #222;
-	padding-top: 30px;
 }
 .tecnologies-title {
 	
@@ -292,6 +307,7 @@ body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: #55BD36;
+	margin-top: 5px
 }
 
 .tecnologies-area-study {
@@ -369,8 +385,10 @@ body{
 
 
 .contacts-area {
-	background-color: #333;
-	padding-top: 30px;
+	background-image: url( );
+	background-size: cover;
+	background-position: right;
+	background-color: #999;
 }
 .contacts-title {
 	
@@ -385,6 +403,7 @@ body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: #55BD36;
+	margin-top: 5px
 }
 .contacts-tile-information{
 	font-size: 18px;
@@ -400,10 +419,15 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-top: 70px;
+	padding-right: 50px;
 }
 .contato {
 	width: 100%;
 	max-width: 500px;
+	background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
 }
 
 .form {
@@ -414,9 +438,45 @@ body{
 .field {
 	padding: 10px;
 	margin-bottom: 15px;
-	border: 1px solid #DDD;
+	border: 0px;
 	border-radius: 5px;
 	font-size: 16px;
+	background-color: #999;
+	outline: none;
+
+}
+::-webkit-input-placeholder{
+	color: #FFF;
+
+
+}
+.contacts-cel {
+	display: flex;
+	justify-content: center;
+	margin-top: -7px;
+	height: 30px;
+}
+
+.contacts-cel a:first-child {
+	margin-right: 5px;
+	height: auto;
+	display: flex;
+
+}
+.barra {
+	height: 30px;
+	width: 2px;
+	background-color: #000;
+}
+#icone-telegram {
+	margin-left: 5px;
+	display: flex;
+
+}
+.contacts-cel a img {
+	width: 27px;
+	height: auto;
+	margin: auto;
 }
 textarea {
 	height: 150px;
@@ -424,11 +484,9 @@ textarea {
 }
 
 .rodape {
-	height: 40px;
+	height: auto;
 	background-color: #000;
 	color: #FFF;
 	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 }
