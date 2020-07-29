@@ -8,11 +8,11 @@ $('.scrollSuave').click(function(e){
 	}, 500);
 });
 
-//função para abrir a div de tecnologies
+// função para abrir a div de tecnologies
 
 /*$(document).ready(function(){
-	$('.hidden-div').hide(); //para esconder a div
-	$('open-div').hover(function(){
+	$('.open-div span').hide(); //para esconder a div
+	$('open-div').click(function(){
 		$(this).toggleClass('active').next().slideToggle('slow');
 		return false;
 
@@ -50,3 +50,21 @@ const titulo = document.querySelector('.home-name h1');
 typeWriter(titulo);
 
 
+//esconder o span 
+
+/*window.onload = function(){
+		document.querySelector("#teste").addEventListener("click", function(){
+			if(document.querySelector(".open-div span").style.display == 'none') {
+				document.querySelector(".open-div span").style.display = 'flex';
+			} else {
+				document.querySelector(".open-div span").style.display = 'none';
+			}
+		});
+	};	
+*/
+
+/*$('.open-div').click(
+	function() {
+		$(this).css({'background-color' : '#000'})
+	}
+);*/
