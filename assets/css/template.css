@@ -27,6 +27,8 @@ body{
 	height: 40px;
 	display: none;
 	flex-direction: column;
+	cursor: pointer;
+
 }
 .mm_line {
 	height: 5px;
@@ -517,14 +519,16 @@ textarea {
 @media (min-width: 450px) and (max-width: 800px) {
 	.menu-area {
 		display: none;
-		
+		background-color: rgba(1,1,1,0.6);	
 	}
 	.menuMobile {
 		display: flex;
 		position: absolute;
 		z-index: 999;
+		position: fixed;
 		margin-top: 20px;
     	margin-left: 20px;
+    	right: 10px;
 
 		
 	}
@@ -709,6 +713,7 @@ textarea {
 		z-index: 999;
 		margin-top: 20px;
     	margin-left: 20px;
+    	right: 10px;
 
 		
 	}

@@ -68,3 +68,19 @@ typeWriter(titulo);
 		$(this).css({'background-color' : '#000'})
 	}
 );*/
+
+//Função para abrir o menu mobile 
+
+function menuToggle() {
+	document.querySelector('.menuMobile').addEventListener("click",function(){
+		if (document.querySelector('.menu-area').style.display == 'flex'){
+			document.querySelector('.menu-area').style.display = 'none';
+			document.querySelector('.home').style = 'padding-left: 0px';
+			document.querySelector('.home-name').style = 'max-width: 500px';
+		} else {
+			document.querySelector('.menu-area').style.display = 'flex';
+			document.querySelector('.home').style = 'padding-left: 200px';
+			document.querySelector('.home-name').style = 'max-width: 300px';
+		}
+	})
+}
