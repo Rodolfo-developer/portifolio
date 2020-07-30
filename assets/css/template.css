@@ -185,6 +185,7 @@ body{
 	height: auto;
 	line-height: 25px;
 	color: #FFF;
+	text-align: justify;
 		
 }
 
@@ -527,18 +528,21 @@ textarea {
 
 		
 	}
+	.home-area {
+		
+	}
 	.home {		
 		display: flex;
 		justify-content: center;
     	align-items: center;
     	padding-left: 0px;
     	padding-top: 0px;
+    	
 	}
 
 	.home-name {
 		margin-top: 0px;
 		padding-left: 0px;
-		padding-right: 30px;
 		max-width: 500px;
 	}
 	.home-name h1 {
@@ -549,18 +553,23 @@ textarea {
 		width: 100vw;
 		height: 100vh;
 		margin-left: 0px;	
-		padding-left: 30px;
+		padding-left: 0px;
 		font-size: 18px;
 	}
 
 	/*About*/
 
+	.about-title {
+		margin-left: 30px;
+	}
 	.about-underline{
 		width: 40px;
+		margin-left: 30px;
 	}
 	.about-me-title {
     	font-size: 16px;
     	padding-top: 14px;
+    	margin-left: 30px;
 	}
 	.about-me {
 		display: flex;
@@ -581,7 +590,7 @@ textarea {
 		padding-left: 0px;
 	}
 	.portfolio-title {
-		padding-left: 30px;
+		margin-left: 30px;
 	}
 	.portfolio-underline {
 		width: 40px;
@@ -590,21 +599,31 @@ textarea {
 	.portfolio-title-me {
 		font-size: 16px;
     	padding-top: 14px;
-    	padding-left: 30px;
+    	margin-left: 30px;
 	}
 	.portfolio-projects-area {
 		width: 100%;
 
 	}
+	.portfolio-projects {   
+    	width: 95%;
+        margin: auto;
+    	margin-top: 40px;
+	}
 
 	/*tecnologias*/
 
+	.tecnologies-title{
+		margin-left: 30px;
+	}
 	.tecnologies-underline {
 		width: 40px;
+		margin-left: 30px;
 	}
 	.tecnologies-area-study {
 		font-size: 16px;
     	padding-top: 14px;
+    	margin-left: 30px;
 	}
 	.tecnologies-area-general {
 		margin-top: 45px;
@@ -635,14 +654,14 @@ textarea {
 		padding-left: 0px;
 	}
 	.contacts-title {
-		padding-left: 30px;
+		margin-left: 30px;
 	}
 	.contacts-underline {
 		margin-left: 30px;
 		width: 40px;
 	}
 	.contacts-tile-information {
-		padding-left: 30px;
+		margin-left: 30px;
 		font-size: 16px;
     	padding-top: 14px;
 	}
@@ -680,5 +699,184 @@ textarea {
 
 /*Responsivo para celular*/ 
 @media  (max-width: 450px) {
+	.menu-area {
+		display: none;
+		
+	}
+	.menuMobile {
+		display: flex;
+		position: absolute;
+		z-index: 999;
+		margin-top: 20px;
+    	margin-left: 20px;
 
+		
+	}
+	.home-area {
+		height: 100vh;
+	}
+	.home {		
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	padding-left: 0px;
+    	padding-top: 0px;
+    	
+	}
+
+	.home-name {
+		margin-top: 0px;
+		padding-left: 0px;
+		max-width: 360px;
+	}
+	.home-name h1 {
+		font-size: 30px;
+		padding: 0px;
+	}
+	.container {
+		width: 100vw;
+		height: 100%;
+		margin-left: 0px;	
+		padding-left: 0px;
+		font-size: 18px;
+	}
+
+	/*About*/
+
+	.about-title {
+		margin-left: 30px;
+	}
+	.about-underline{
+		width: 40px;
+		margin-left: 30px;
+	}
+	.about-me-title {
+    	font-size: 16px;
+    	padding-top: 14px;
+    	margin-left: 30px;
+	}
+	.about-me {
+		display: flex;
+		max-width: 318px;
+		height: auto;
+		margin: auto;
+		
+	}
+	.about-me-description {
+		font-size: 15px;
+    	text-align: justify;
+    	padding-top: 0px;
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+	}
+
+	/*Portifolio*/
+
+	.portfolio-title {
+		margin-left: 30px;
+	}
+	.portfolio-underline {
+		width: 40px;
+		margin-left: 30px;
+	}
+	.portfolio-title-me {
+		font-size: 16px;
+    	padding-top: 14px;
+    	margin-left: 30px;
+	}
+	.portfolio-projects-area {
+		width: 100%;
+		height: 100%;
+	}
+
+	.portfolio-projects {
+		display: flex;
+    	flex-direction: column;
+    	height: 100%;
+    	margin-top: 20px;
+   	 	margin-bottom: 20px;
+	}
+	.projects {
+		margin: 10px;
+	}
+
+	/*tecnologias*/
+
+	.tecnologies-title {
+		margin-left: 30px;
+	}
+	.tecnologies-underline {
+		width: 40px;
+		margin-left: 30px;
+	}
+	.tecnologies-area-study {
+		font-size: 16px;
+    	padding-top: 14px;
+    	margin-left: 30px;
+	}
+	.tecnologies-area-general {
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	.learned span {
+		font-size: 15px;
+	}
+	.learned img {
+    	margin: 5px;
+    	width: 80px;
+    	height: auto;
+	}
+	.learning {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	.learning span {
+		font-size: 15px;
+	}
+	.learning img {
+    	margin: 5px;
+    	width: 80px;
+    	height: auto;
+	}
+
+	/*Contacts*/
+
+	.contacts-title {
+		margin-left: 30px;
+	}
+	.contacts-underline {
+		margin-left: 30px;
+		width: 40px;
+	}
+	.contacts-tile-information {
+		margin-left: 30px;
+		font-size: 16px;
+    	padding-top: 14px;
+	}
+	.contant {
+		padding-right: 0px;
+		margin-top: 10px;
+		padding: 20px;
+	}
+	.contato {
+		max-width: 400px;
+		padding-top: 6px;
+		padding-bottom: 5px;
+	}
+	.contato h3 {
+		font-size: 18px;
+	}
+	.field {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	/*Rodape*/
+
+	.rodape {
+		height: auto;   	
+    	font-size: 10px;
+    	padding-left: 0px;
+    	padding-top: 10px;
+	}
 }
