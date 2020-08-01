@@ -16,6 +16,7 @@ body{
 	margin-left: 200px;
 	padding-left: 50px;	
 	padding-top: 30px;
+	
 }
 
 .home-area {
@@ -33,26 +34,27 @@ body{
 .mm_line {
 	height: 5px;
 	width: 100%;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 	margin: auto;
 
 }
 .menu-area {
 	width: 200px;
 	height: 100vh;
-	background-color: #321E1E;
+	background-color: #000;	
 	position: fixed;
 	z-index: 999;	
 	border-right: 2px solid #000;
 	display: flex;
 	margin: auto;
+/*background-color: #071A52*/
 	
 }
 .menu-background {
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.6);
 }
 .menu {
 	width: 150px;
@@ -88,7 +90,7 @@ body{
 	color: #FFF;
 }
 .menu nav li a:hover {
-	color: #000;
+	color: #FFAC41;
 	transition-duration: .5s;
 }
 
@@ -114,12 +116,20 @@ body{
 
 .home {
 	display: flex;
-	background: #341919;
+	background: #323232;
 	overflow: hidden;
 	padding-left: revert;
 	padding-top: 0px;
 }
-
+.home img {
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/20170129_120011.jpg);
+	background-size: cover; 
+	background-position: center;
+	border-radius: 50%;
+	display: none;
+}
 .home-name {
 	width: 580px;
 	line-height: 50px;
@@ -133,7 +143,7 @@ body{
 	text-align: center;
 	font-weight: bolder;
 	font-size: 40px;
-	color: #FFF;
+	color: #FF1E56;
 
 	padding: 40px;
 }
@@ -156,7 +166,7 @@ body{
 
 .about-area {
 	
-	background: #321E1E;
+	background: #323232;
 	
 }
 
@@ -171,7 +181,7 @@ body{
 	width: 45px;
 	height: 5px;
 	border-radius: 2px;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 	margin-top: 5px;
 }
 .about-me-title{
@@ -186,8 +196,9 @@ body{
 	width: 800px;
 	height: auto;
 	line-height: 25px;
-	color: #FFF;
+	color: #000;
 	text-align: justify;
+	font-weight: 600;
 		
 }
 
@@ -196,7 +207,7 @@ body{
 
 
 .portfolio-area {
-	background-color: #341919;
+	background-color: #323232;
 }
 .portfolio-title {
 	font-weight: bold;	
@@ -208,7 +219,7 @@ body{
 	width: 45px;
 	height: 5px;
 	border-radius: 2px;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 	margin-top: 5px
 }
 .portfolio-title-me {
@@ -318,7 +329,7 @@ body{
 }
 
 .tecnologies-area {
-	background-color: #321E1E;
+	background-color: #323232;
 }
 .tecnologies-title {
 	
@@ -332,7 +343,7 @@ body{
 	width: 45px;
 	height: 5px;
 	border-radius: 2px;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 	margin-top: 5px
 }
 
@@ -407,7 +418,7 @@ body{
 
 
 .contacts-area {
-	background: #341919;
+	background: #323232;
 	
 }
 .contacts-title {
@@ -422,7 +433,7 @@ body{
 	width: 45px;
 	height: 5px;
 	border-radius: 2px;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 	margin-top: 5px
 }
 .contacts-tile-information{
@@ -543,11 +554,19 @@ textarea {
     	padding-top: 0px;
     	
 	}
-
+	.home img {
+		display: flex;
+		margin: auto;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		top: 90px;
+	}
 	.home-name {
 		margin-top: 0px;
 		padding-left: 0px;
 		max-width: 500px;
+		margin-top: 250px;
 	}
 	.home-name h1 {
 		font-size: 30px;
@@ -705,11 +724,12 @@ textarea {
 @media  (max-width: 450px) {
 	.menu-area {
 		display: none;
+		background-color: rgba(0,0,0,0.0);
 		
 	}
 	.menuMobile {
 		display: flex;
-		position: absolute;
+		position: fixed;
 		z-index: 999;
 		margin-top: 20px;
     	margin-left: 20px;
@@ -728,11 +748,19 @@ textarea {
     	padding-top: 0px;
     	
 	}
-
+	.home img {
+		display: flex;
+		margin: auto;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 90px;
+	}
 	.home-name {
 		margin-top: 0px;
 		padding-left: 0px;
 		max-width: 360px;
+		margin-top: 170px;
 	}
 	.home-name h1 {
 		font-size: 30px;
