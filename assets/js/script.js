@@ -73,14 +73,47 @@ typeWriter(titulo);
 
 function menuToggle() {
 	document.querySelector('.menuMobile').addEventListener("click",function(){
-		if (document.querySelector('.menu-area').style.display == 'flex'){
-			document.querySelector('.menu-area').style.display = 'none';
-			document.querySelector('.home').style = 'padding-left: 0px';
-			document.querySelector('.home-name').style = 'max-width: 500px';
+		if (document.querySelector('.menu-area').style.left == '0px'){
+
+			document.querySelector('.menu-area').style.left = '-200px';	
+			document.querySelector('.menuMobile').style = 'padding-right: 0px';
+		
 		} else {
-			document.querySelector('.menu-area').style.display = 'flex';
-			document.querySelector('.home').style = 'padding-left: 200px';
-			document.querySelector('.home-name').style = 'max-width: 300px';
+
+			document.querySelector('.menu-area').style  = 'left: 0px';			
+			document.querySelector('.menuMobile').style = 'left: 200px; margin-top: 0px; margin-left: 0px;';
+			
 		}
 	})
 }
+
+//função para fechar o menu mobile ao clicar no nav 
+
+window.onload = function() {
+	document.querySelector('.menu ul').addEventListener("click",function(){
+		if (document.querySelector('.menu-area').style.left == '0px'){
+
+			document.querySelector('.menu-area').style.left = '-200px';	
+			document.querySelector('.menuMobile').style = 'padding-right: 0px';
+		
+		} else {
+			
+			document.querySelector('.menu-area').style  = 'left: 0px';			
+			document.querySelector('.menuMobile').style = 'left: 200px; margin-top: 0px; margin-left: 0px;';
+			
+		}
+	})
+}
+
+//função para esconder o menu mobile quando descer a tela
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop || st === 100){
+      $('.menuMobile').slideUp("slow");
+   } else {
+      $('.menuMobile').slideDown("slow");
+   }
+   lastScrollTop = st;
+});

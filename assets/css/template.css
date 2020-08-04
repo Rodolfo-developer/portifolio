@@ -21,6 +21,7 @@ body{
 
 .home-area {
 	display: flex;
+	
 }
 .menuMobile {
 	
@@ -41,10 +42,10 @@ body{
 .menu-area {
 	width: 200px;
 	height: 100vh;
-	background-color: #000;	
+	background-color: rgba(0,0,0,0.1);
 	position: fixed;
 	z-index: 999;	
-	border-right: 2px solid #000;
+	border-right: 1px solid #000;
 	display: flex;
 	margin: auto;
 /*background-color: #071A52*/
@@ -116,10 +117,11 @@ body{
 
 .home {
 	display: flex;
-	background: #323232;
+	background: linear-gradient(45deg, black, rgba(0,0,0,0.5));
 	overflow: hidden;
 	padding-left: revert;
 	padding-top: 0px;
+	border-bottom: 1px solid #000;
 }
 .home img {
 	width: 150px;
@@ -143,7 +145,7 @@ body{
 	text-align: center;
 	font-weight: bolder;
 	font-size: 40px;
-	color: #FF1E56;
+	color: #000;
 
 	padding: 40px;
 }
@@ -167,16 +169,16 @@ body{
 .about-area {
 	
 	background: #323232;
+	border-bottom: 1px solid #000;
 	
 }
 
 .about-title {	
 	font-weight: bold;
+	color: #FFAC41;
 
 }
-.about-title:hover {
-	color: #55BD36;
-}
+
 .about-underline{
 	width: 45px;
 	height: 5px;
@@ -208,13 +210,13 @@ body{
 
 .portfolio-area {
 	background-color: #323232;
+	border-bottom: 1px solid #000;
 }
 .portfolio-title {
-	font-weight: bold;	
+	font-weight: bold;
+	color: #FFAC41;	
 }
-.portfolio-title:hover {
-	color: #55BD36;
-}
+
 .portfolio-underline{
 	width: 45px;
 	height: 5px;
@@ -265,6 +267,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
+	box-shadow: 0px 0px 10px #000;
 
 }
 .open-div a {
@@ -314,7 +317,7 @@ body{
 	font-weight: 700; 
 }
 .projects .open-div:hover {
-	background-color: #000;
+	background-color: #FFAC41;
 	transition: .5s;
 	text-shadow: 5px 6px 3px rgba(0,0,0,0.6);	
 	font-weight: 700;
@@ -330,15 +333,14 @@ body{
 
 .tecnologies-area {
 	background-color: #323232;
+	border-bottom: 1px solid #000;
 }
 .tecnologies-title {
 	
 	font-weight: bold;
-	color: #000;	
+	color: #FFAC41;	
 }
-.tecnologies-title:hover {
-	color: #55BD36;
-}
+
 .tecnologies-underline{
 	width: 45px;
 	height: 5px;
@@ -370,7 +372,7 @@ body{
 	width: 20px;
 	height: 20px;
 	border-radius: 10px;
-	background-color: #55BD36;
+	background-color: #FFAC41;
 }
 .learned span {
 	margin-left: 10px;
@@ -424,10 +426,7 @@ body{
 .contacts-title {
 	
 	font-weight: bold;
-	color: #000;	
-}
-.contacts-title:hover {
-	color: #55BD36;
+	color: #FFAC41;	
 }
 .contacts-underline{
 	width: 45px;
@@ -460,6 +459,9 @@ body{
     padding-bottom: 10px;
     border-radius: 15px;
 }
+.contato h3 {
+	text-align: center;
+}
 
 .form {
 	display: flex;
@@ -475,14 +477,26 @@ body{
 	background-color: rgba(0,0,0,0.5);
 	outline: none;
 	color: #FFF;
-
-
 }
+.submit {
+	color: #323232;
+}
+.submit:hover {
+	color: #FFAC41
+}
+
 ::-webkit-input-placeholder{
-	color: #FFF;
+	color: #FFAC41;
 	font-weight: normal;
 
+}
 
+.field:focus {
+	border: 1px solid #FFAC41;
+	border-color: #FFAC41;
+	box-shadow: 0 0 8px #FFAC41;
+	transition: .3s;
+	color: #FFAC41;
 }
 .contacts-cel {
 	display: flex;
@@ -529,17 +543,19 @@ textarea {
 
 @media (min-width: 450px) and (max-width: 800px) {
 	.menu-area {
-		display: none;
-		background-color: rgba(1,1,1,0.6);	
+		left: -200px;
+		background-color: rgba(1,1,1,0.1);
+		transition: .5s;	
 	}
 	.menuMobile {
 		display: flex;
 		position: absolute;
 		z-index: 999;
 		position: fixed;
-		margin-top: 20px;
-    	margin-left: 20px;
-    	right: 10px;
+		margin-top: 15px;
+    	margin-left: 15px;
+    	left: 10px;
+    	transition: .5s;
 
 		
 	}
@@ -601,10 +617,9 @@ textarea {
 		margin: auto;
 	}
 	.about-me-description {
-		font-size: 15px;
-    	text-align: center;
+		font-size: 15px;   	
     	padding-top: 0px;
-    	margin-top: 20px;
+    	margin-top: 100px;
 	}
 
 	/*Portifolio*/
@@ -723,18 +738,20 @@ textarea {
 /*Responsivo para celular*/ 
 @media  (max-width: 450px) {
 	.menu-area {
-		display: none;
+		left: -200px;
 		background-color: rgba(0,0,0,0.0);
+		transition: .5s;
 		
 	}
 	.menuMobile {
 		display: flex;
-		position: fixed;
+		position: absolute;
 		z-index: 999;
-		margin-top: 20px;
-    	margin-left: 20px;
-    	right: 10px;
-
+		position: fixed;
+		margin-top: 15px;
+    	margin-left: 15px;
+    	left: 10px;
+    	transition: .5s;
 		
 	}
 	.home-area {
