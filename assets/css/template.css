@@ -37,6 +37,7 @@ body{
 	width: 100%;
 	background-color: #FFAC41;
 	margin: auto;
+	display: none;
 
 }
 .menu-area {
@@ -543,7 +544,7 @@ textarea {
 
 @media (min-width: 450px) and (max-width: 800px) {
 	.menu-area {
-		left: -200px;
+		right: -200px;
 		background-color: rgba(1,1,1,0.1);
 		transition: .5s;	
 	}
@@ -554,10 +555,13 @@ textarea {
 		position: fixed;
 		margin-top: 15px;
     	margin-left: 15px;
-    	left: 10px;
+    	right: 10px;
     	transition: .5s;
 
 		
+	}
+	.mm_line {
+		display: flex;
 	}
 	.home-area {
 		
@@ -738,7 +742,7 @@ textarea {
 /*Responsivo para celular*/ 
 @media  (max-width: 450px) {
 	.menu-area {
-		left: -200px;
+		right: -200px;
 		background-color: rgba(0,0,0,0.0);
 		transition: .5s;
 		
@@ -750,9 +754,12 @@ textarea {
 		position: fixed;
 		margin-top: 15px;
     	margin-left: 15px;
-    	left: 10px;
+    	right: 10px;
     	transition: .5s;
 		
+	}
+	.mm_line {
+		display: flex;
 	}
 	.home-area {
 		height: 100vh;
