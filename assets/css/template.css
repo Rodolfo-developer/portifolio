@@ -8,6 +8,7 @@ body{
 	font-family: 'Montserrat',arial, helvetica, sans-serif;
 	font-size: 20px;
 	overflow-x: hidden;
+
 }
 
 .container {
@@ -67,7 +68,7 @@ body{
 	
 }
 
-.img {
+.menu-img {
 	width: 150px;
 	height: 150px;
 	background-image: url(../images/20170129_120011.jpg);
@@ -124,7 +125,7 @@ body{
 	padding-top: 0px;
 	border-bottom: 1px solid #000;
 }
-.home img {
+.home-img {
 	width: 150px;
 	height: 150px;
 	background-image: url(../images/20170129_120011.jpg);
@@ -548,6 +549,9 @@ textarea {
 		background-color: rgba(1,1,1,0.1);
 		transition: .5s;	
 	}
+	.menu-img {
+		display: none;
+	}
 	.menuMobile {
 		display: flex;
 		position: absolute;
@@ -574,7 +578,7 @@ textarea {
     	padding-top: 0px;
     	
 	}
-	.home img {
+	.home-img {
 		display: flex;
 		margin: auto;
 		width: 250px;
@@ -670,6 +674,9 @@ textarea {
 	.tecnologies-area-general {
 		margin-top: 45px;
 	}
+	.learned {
+		margin-left: 10px;
+	}
 	.learned span {
 		font-size: 16px;
 	}
@@ -680,6 +687,7 @@ textarea {
 	}
 	.learning {
 		margin-top: 45px;
+		margin-left: 10px;
 	}
 	.learning span {
 		font-size: 16px;
@@ -747,6 +755,33 @@ textarea {
 		transition: .5s;
 		
 	}
+	.menu-img {
+		display: none;
+	}
+	.menu nav {
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.menu nav li {
+		padding-top: 20px;
+		font-size: 25px;
+	}
+	.menu p {
+		
+		font-size: 15px;
+		
+	}
+	.menu .social {
+		display: flex;	
+		margin: auto;
+		max-width: 120px;
+	}
+	.social div {
+		flex: 1;	
+		margin: 5px;
+		margin-top: 20px;
+	}
 	.menuMobile {
 		display: flex;
 		position: absolute;
@@ -772,7 +807,7 @@ textarea {
     	padding-top: 0px;
     	
 	}
-	.home img {
+	.home-img {
 		display: flex;
 		margin: auto;
 		width: 200px;

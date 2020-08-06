@@ -92,16 +92,16 @@ menuOpen.onclick = function(){
 //função para fechar o menu mobile ao clicar no nav 
 
 let menuClose = document.querySelector('.menu ul')
-menuClose.onclick = function (){
-	if (document.querySelector('.menu-area').style.left == '0px'|| max-width <= 800){
 
- 			document.querySelector('.menu-area').style.left = '-200px';	
+menuClose.onclick = function (){
+	if (document.querySelector('.menu-area').style.right == '0px' || width <= 800){
+
+ 			document.querySelector('.menu-area').style.right = '-200px';	
  			document.querySelector('.menuMobile').style = 'padding-right: 0px';
-		
  		}else {
 			
- 						
- 			document.querySelector('.menuMobile').style = 'left: 200px; margin-top: 0px; margin-left: 0px;';
+ 			document.querySelector('.menu-area').style  = 'right: 0px';		
+ 			document.querySelector('.menuMobile').style = 'right: 0px; margin-top: 0px; margin-left: 0px';
 			
  		}
 }
@@ -126,6 +126,7 @@ menuClose.onclick = function (){
 
 // 
 //função para esconder o menu mobile quando descer a tela
+
 
 // var lastScrollTop = 0;
 // $(window).scroll(function(event){
