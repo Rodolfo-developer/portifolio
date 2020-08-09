@@ -25,21 +25,68 @@ body{
 	
 }
 .menuMobile {
-	
-	width: 40px;
-	height: 40px;
 	display: none;
-	flex-direction: column;
-	cursor: pointer;
-
+	width: 88px;
+	height: 88px;
+	margin: 100px auto;
+	position: relative;		
 }
-.mm_line {
-	height: 5px;
+	.menuMobile label {
 	width: 100%;
-	background-color: #FFAC41;
-	margin: auto;
+	height: 70%;
+	background-color: transparent;
+	position: absolute;
+	transition: all .5s linear;
+	z-index: 2;
+}
+#check {
+	position: absolute;
+	z-index: 1;
 	display: none;
+}
+.menuMobile span {
+	width: 50px;
+	height: 6px;
+	top: 30px;
+	left: 20px;
+	position: absolute;
+	background-color: #FFAC41;
+	transition: all .5s linear;
+	border-radius: 5px;
+}
+.menuMobile span:before {
+	content: '';
+	width: 50px;
+	height: 6px;
+	bottom: -18px;
+	position: absolute;
+	background-color: #FFAC41;
+	transition: all .5s linear;
+ 	border-radius: 5px;
+}
+.menuMobile span:after {
+	content: '';
+	width: 50px;
+	height: 6px;
+	top: -18px;
+	position: absolute;
+	background-color: #FFAC41;
+	transition: all .5s linear;
+	border-radius: 5px;
+}
 
+#check:checked ~ span {
+	background-color: transparent;
+	transition: all .0s linear;
+}
+#check:checked ~ span:before {
+	transform: translate(0px, -18px) rotate(-45deg);
+}
+#check:checked ~ span:after {
+	transform: translate(0px, 18px)rotate(45deg);
+}
+#check:checked ~ label {
+	border-radius: 50%;
 }
 .menu-area {
 	width: 200px;
@@ -558,17 +605,32 @@ textarea {
 		z-index: 999;
 		position: fixed;
 		margin-top: 15px;
-    	margin-left: 15px;
     	right: 10px;
-    	transition: .5s;
+    			
+	}
+	.menu nav {
+		margin-top: 40px;
+		text-align: center;
+	}
 
+	.menu nav li {
+		padding-top: 20px;
+		font-size: 25px;
+	}
+	.menu p {
+		
+		font-size: 15px;
 		
 	}
-	.mm_line {
-		display: flex;
+	.menu .social {
+		display: flex;	
+		margin: auto;
+		max-width: 120px;
 	}
-	.home-area {
-		
+	.social div {
+		flex: 1;	
+		margin: 5px;
+		margin-top: 20px;
 	}
 	.home {		
 		display: flex;
@@ -758,6 +820,15 @@ textarea {
 	.menu-img {
 		display: none;
 	}
+	.menuMobile {
+		display: flex;
+		position: absolute;
+		z-index: 999;
+		position: fixed;
+		margin-top: 15px;
+    	right: 10px;
+    			
+	}
 	.menu nav {
 		margin-top: 40px;
 		text-align: center;
@@ -782,20 +853,7 @@ textarea {
 		margin: 5px;
 		margin-top: 20px;
 	}
-	.menuMobile {
-		display: flex;
-		position: absolute;
-		z-index: 999;
-		position: fixed;
-		margin-top: 15px;
-    	margin-left: 15px;
-    	right: 10px;
-    	transition: .5s;
-		
-	}
-	.mm_line {
-		display: flex;
-	}
+	
 	.home-area {
 		height: 100vh;
 	}
@@ -825,6 +883,7 @@ textarea {
 		font-size: 30px;
 		padding: 0px;
 	}
+	
 	.container {
 		width: 100vw;
 		height: 100%;
