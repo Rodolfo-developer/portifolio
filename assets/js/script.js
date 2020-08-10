@@ -72,18 +72,18 @@ typeWriter(titulo);
 
 //Função para abrir o menu mobile 
 
-let menuOpen = document.querySelector('#checkum')
+let menuOpen = document.querySelector('#check-one')
 
 menuOpen.onclick = function(){
 	if (document.querySelector('.menu-area').style.right == '0px'){
 
  			document.querySelector('.menu-area').style.right = '-200px';	
  			document.querySelector('.menuMobile').style = 'padding-right: 0px; transition: .5s';
-			document.querySelector('.menuMobile span').style = '';
+			
  		} else {
 
  			document.querySelector('.menu-area').style  = 'right: 0px';			
- 			document.querySelector('.menuMobile').style = 'margin-top: 0px; right: 178px; transition: .3s';
+ 			document.querySelector('.menuMobile').style = 'margin-top: 0px; right: 168px; transition: .3s';
 			document.querySelector('.menuMobile span').style = '';
  		}
 }

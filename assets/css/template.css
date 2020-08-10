@@ -81,9 +81,13 @@ body{
 }
 #check:checked ~ span:before {
 	transform: translate(0px, -18px) rotate(-45deg);
+	background-color: red;
+	width: 40px;
 }
 #check:checked ~ span:after {
 	transform: translate(0px, 18px)rotate(45deg);
+	background-color: red;
+	width: 40px;
 }
 #check:checked ~ label {
 	border-radius: 50%;
@@ -97,7 +101,6 @@ body{
 	border-right: 1px solid #000;
 	display: flex;
 	margin: auto;
-/*background-color: #071A52*/
 	
 }
 .menu-background {
@@ -118,7 +121,7 @@ body{
 .menu-img {
 	width: 150px;
 	height: 150px;
-	background-image: url(../images/20170129_120011.jpg);
+	background-image: url(../images/foto21.jpg);
 	background-size: cover; 
 	background-position: center;
 	border-radius: 50%;
@@ -174,12 +177,15 @@ body{
 }
 .home-img {
 	width: 150px;
-	height: 150px;
-	background-image: url(../images/20170129_120011.jpg);
-	background-size: cover; 
+	height: 150px; 
 	background-position: center;
 	border-radius: 50%;
 	display: none;
+}
+.home-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
 }
 .home-name {
 	width: 580px;
@@ -872,6 +878,10 @@ textarea {
 		height: 200px;
 		position: absolute;
 		top: 90px;
+
+	}
+	.home-img img {
+		
 	}
 	.home-name {
 		margin-top: 0px;
@@ -883,7 +893,7 @@ textarea {
 		font-size: 30px;
 		padding: 0px;
 	}
-	
+
 	.container {
 		width: 100vw;
 		height: 100%;
