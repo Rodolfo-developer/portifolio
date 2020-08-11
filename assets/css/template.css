@@ -652,11 +652,9 @@ textarea {
 	}
 	.home-img {
 		display: flex;
-		margin: auto;
 		width: 280px;
-		height: 280px;
-		position: absolute;
-		top: 90px;
+		height: 280px;		
+		margin-top: -220px;
 	}
 	.home-name {
 		margin-top: 0px;
@@ -876,7 +874,6 @@ textarea {
 	.home-area-total {
 		display: flex;
 	    justify-content: center;
-	    align-items: center;
 	    width: 80vw;
 	    height: 100vh;
 	    position: absolute;
@@ -884,6 +881,7 @@ textarea {
 	.home-img-total {
 		display: flex;
 		justify-content: center;
+		margin-top: 100px;
 	}
 	.home {		
 		display: flex;
@@ -896,7 +894,6 @@ textarea {
 		display: flex;
 		width: 250px;
 		height: 250px;
-		position: absolute;
 		top: 90px;
 	}
 	
@@ -904,6 +901,7 @@ textarea {
 		padding-left: 0px;
 		max-width: 360px;
 		margin-top: 0px;
+		bottom: 100px;
 	
 	}
 	.home-name h1 {
