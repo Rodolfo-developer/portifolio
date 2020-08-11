@@ -642,6 +642,14 @@ textarea {
     	padding-top: 0px;
     	
 	}
+	.home-area-total {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100vw;
+	    height: 100vh;
+	    position: absolute;
+	}
 	.home-img {
 		display: flex;
 		margin: auto;
@@ -687,6 +695,7 @@ textarea {
 		max-width: 500px;
 		height: auto;
 		margin: auto;
+		margin-top: -60px;
 	}
 	.about-me-description {
 		font-size: 15px;   	
@@ -741,6 +750,7 @@ textarea {
 	}
 	.tecnologies-area-general {
 		margin-top: 45px;
+		margin-left: 30px;
 	}
 	.learned {
 		margin-left: 10px;
@@ -863,13 +873,20 @@ textarea {
 	.home-area {
 		height: 100vh;
 	}
+	.home-area-total {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100vw;
+	    height: 100vh;
+	    position: absolute;
+	}
 	.home {		
 		display: flex;
 		justify-content: center;
     	align-items: center;
     	padding-left: 0px;
-    	padding-top: 0px;
-    	
+    	padding-top: 0px;   	
 	}
 	.home-img {
 		display: flex;
@@ -882,6 +899,7 @@ textarea {
 	.home-name {
 		padding-left: 0px;
 		max-width: 360px;
+		margin-top: 270px;
 	}
 	.home-name h1 {
 		font-size: 30px;
