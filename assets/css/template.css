@@ -175,6 +175,12 @@ body{
 	padding-top: 0px;
 	border-bottom: 1px solid #000;
 }
+.home-area-total {
+	
+    justify-content: center;
+    align-items: center;
+    
+}
 .home-img {
 	width: 150px;
 	height: 150px;
@@ -643,24 +649,35 @@ textarea {
     	
 	}
 	.home-area-total {
-		display: flex;
+		
 	    justify-content: center;
 	    align-items: center;
-	    width: 100vw;
-	    height: 100vh;
+	    width: 500px;
+	    height: 100%;
 	    position: absolute;
+	    flex-direction: column;
 	}
+	
 	.home-img {
 		display: flex;
 		width: 280px;
-		height: 280px;		
-		margin-top: -220px;
+		height: 280px;
+	    		
+		
+	}
+	.home-img-area {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+    	margin-top: 100px;
 	}
 	.home-name {
 		margin-top: 0px;
 		padding-left: 0px;
-		max-width: 500px;
-		margin-top: 250px;
+		max-width: 500px;		
+		position: initial;
 	}
 	.home-name h1 {
 		font-size: 30px;
@@ -872,21 +889,18 @@ textarea {
 		height: 100vh;
 	}
 	.home-area-total {
-		display: flex;
+		
 	    justify-content: center;
-	    width: 80vw;
-	    height: 100vh;
+	    align-items: center;
+	    width: 100%;
+	    height: 100%;
 	    position: absolute;
+	    flex-direction: column;
 	}
-	.home-img-total {
-		display: flex;
-		justify-content: center;
-		margin-top: 100px;
-	}
+	
 	.home {		
 		display: flex;
-		justify-content: center;
-    	
+		justify-content: center;    	
     	padding-left: 0px;
     	padding-top: 0px;   	
 	}
@@ -894,14 +908,22 @@ textarea {
 		display: flex;
 		width: 250px;
 		height: 250px;
-		top: 90px;
+	       	
 	}
-	
+	.home-img-area {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+    	margin-top: 100px;
+	}
 	.home-name {
 		padding-left: 0px;
 		max-width: 360px;
 		margin-top: 0px;
-		bottom: 100px;
+		position: initial;
+		margin: auto;
 	
 	}
 	.home-name h1 {
