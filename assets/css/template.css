@@ -645,8 +645,8 @@ textarea {
 	.home-img {
 		display: flex;
 		margin: auto;
-		width: 250px;
-		height: 250px;
+		width: 280px;
+		height: 280px;
 		position: absolute;
 		top: 90px;
 	}
@@ -720,6 +720,10 @@ textarea {
         margin: auto;
     	margin-top: 40px;
 	}
+	.projects .open-div:hover {
+	background-color: rgba(0,0,0,0.5);
+	}
+
 
 	/*tecnologias*/
 
@@ -781,7 +785,7 @@ textarea {
 	}
 	.contant {
 		padding-right: 0px;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 	.contato {
 		max-width: 400px;
