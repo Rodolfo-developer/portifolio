@@ -881,6 +881,10 @@ textarea {
 	    height: 100vh;
 	    position: absolute;
 	}
+	.home-img-total {
+		display: flex;
+		justify-content: center;
+	}
 	.home {		
 		display: flex;
 		justify-content: center;
@@ -899,6 +903,7 @@ textarea {
 	.home-name {
 		padding-left: 0px;
 		max-width: 360px;
+		margin-top: 0px;
 	
 	}
 	.home-name h1 {
