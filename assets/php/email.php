@@ -6,7 +6,7 @@ $nome = addslashes($_POST['name'])
 $email = addslashes($_POST['email'])
 $mensagem = addslashes($_POST['message'])
 
-$to = "rodolfo@gmail.com";
+$to = "rodolforj13@gmail.com";
 $subject = "Contato - Portifolio";
 $body = "Nome: ".$nome. "\r\n".
 		"Email: ".$email. "\r\n".
