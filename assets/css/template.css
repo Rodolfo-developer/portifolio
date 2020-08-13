@@ -589,11 +589,15 @@ textarea {
 }
 
 .rodape {
-	height: auto;
+	height: 30px;
 	background-color: #000;
 	color: #FFF;
 	font-size: 12px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	
 }
 
 /*Responsivo para tablet*/
@@ -827,11 +831,15 @@ textarea {
 
 	/*Rodape*/
 
-	.rodape {
-		height: auto;   	
-    	font-size: 10px;
-    	padding-left: 0px;
-    	padding-top: 10px;
+	.rodape {		   	
+    	height: 30px;
+		background-color: #000;
+		color: #FFF;
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
 	}
 }
 
@@ -1083,9 +1091,13 @@ textarea {
 	/*Rodape*/
 
 	.rodape {
-		height: auto;   	
-    	font-size: 10px;
-    	padding-left: 0px;
-    	padding-top: 10px;
+		height: 30px;
+		background-color: #000;
+		color: #FFF;
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
 	}
 }
